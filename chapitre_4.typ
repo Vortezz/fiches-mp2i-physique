@@ -57,7 +57,7 @@ On a $E$ l'énergie stockée dans un condensateur tel que $E = 1/2 C U^2$.
 
 Aux bornes d'une condensateur $U$ est une fonction continue par le temps.
 
-#proof("On suppose " + $U$ + " discontinue de " + $E$ + " aussi. " + $P = (d E)/(d t)$ + ", ainsi on a une puissance infinie ce qui n'est possible.")
+#proof("On suppose " + $U$ + " discontinue donc " + $E$ + " aussi. " + $P = (d E)/(d t)$ + ", ainsi on a une puissance infinie ce qui n'est possible.")
 
 == Association série et parallèle de condensateurs
 
@@ -156,7 +156,7 @@ Pour résoudre une équation différentielle linéaire d'ordre 1 :
 
 == Bilan d'énergie
 
-$ P_("fournie") &= P_("joule") + P_C + "(loi d'Ohm et loi des mailles dans le circuit RC)" \ integral_0^t E i d t' &= integral_0^t R i^2 d t' + integral_0^t (d)/(d t)(1/2 C U^2) d t' $
+$ P_("fournie") &= P_("joule") + P_C "(loi d'Ohm et loi des mailles dans le circuit RC)" \ integral_0^t E i d t' &= integral_0^t R i^2 d t' + integral_0^t (d)/(d t')(1/2 C U^2) d t' $
 
 == Analyse graphique d'une réponse indicielle
 
@@ -259,7 +259,7 @@ L'intensité est _continue_ dans un bobine.
 
 === Association parallèle
 
-Dans le schéma suivant, on a $1/C_(\eq) = 1/C_1 + 1/C_2$ :
+Dans le schéma suivant, on a $1/L_(\eq) = 1/L_1 + 1/L_2$ :
 
 #figure(
   cetz.canvas(length: 1cm, debug: false, {
