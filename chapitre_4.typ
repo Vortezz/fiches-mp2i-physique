@@ -45,7 +45,7 @@ On a le rapport $Q = C U$ avec $C$ la *capacité du condensateur* en fahrad (F).
 
 == Caractéristique U/I
 
-En convention récepteur on a $I = c (d U)/(d t)$.
+En convention récepteur on a $i = c (d U)/(d t)$.
 
 #proof("On a " + $(d Q)/(d t) = (delta Q)/(d t) = i$ + " et " + $Q = C U$ + " donc " + $i = (d Q)/(d t) = (d C U)/(d t) = c (d U)/(d t)$)
 
@@ -53,7 +53,7 @@ En convention récepteur on a $I = c (d U)/(d t)$.
 
 On a $E$ l'énergie stockée dans un condensateur tel que $E = 1/2 C U^2$.
 
-#proof($P_("reçue") = U I = U C (d U)/(d t) = (d)/(d t)(1/2 C U^2)$ + " et " + $P_("reçue") = (d E)/(d t)$ + " d'où " + $E = 1/2 C U^2 + A$ + " avec " + $A = 0$)
+#proof($P_("reçue") = U i = U C (d U)/(d t) = (d)/(d t)(1/2 C U^2)$ + " et " + $P_("reçue") = (d E)/(d t)$ + " d'où " + $E = 1/2 C U^2 + A$ + " avec " + $A = 0$)
 
 Aux bornes d'une condensateur $U$ est une fonction continue par le temps.
 
@@ -91,7 +91,7 @@ Dans le schéma suivant, on a $C = C_1 + C_2$ :
   caption: [Association parallèle de condensateurs]
 )
 
-#proof("Loi des noeuds, " + $I = i_1 + i_2$ + ", d'après la caractéristique " + $U I$ + " du condensateur, " + $i_1 = C_1 (d U)/(d t)$ + " et " + $i_2 = C_2 (d U)/(d t)$ + " soit " + $i = C_1 (d U)/(d t) + C_2 (d U)/(d t) = (C_1 + C_2) (d U)/(d t)$)
+#proof("Loi des noeuds, " + $i = i_1 + i_2$ + ", d'après la caractéristique " + $U I$ + " du condensateur, " + $i_1 = C_1 (d U)/(d t)$ + " et " + $i_2 = C_2 (d U)/(d t)$ + " soit " + $i = C_1 (d U)/(d t) + C_2 (d U)/(d t) = (C_1 + C_2) (d U)/(d t)$)
 
 === Association série
 
