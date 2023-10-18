@@ -55,13 +55,9 @@ Pour mesurer l'intensité on utilise un ampèremètre branché en _série_ avec 
     import cetz.draw: line
     import "@local/circuitypst:0.0.1": node, to
 
-    line((-2,0), (2,0))
-    line((-1,0), (-1,1))
-    line((1,0), (1,1))
-
-    to("amperemeter", (-1,1), (1,1), label: "")
+    to("amperemeter", (-2,0), (2,0), label: "")
   }),
-  caption: [Ampèremètre en dérivation]
+  caption: [Ampèremètre en série]
 )
 
 On a la *loi des noeuds* car il n'y a pas d'accumulation dans les noeuds : 
@@ -81,9 +77,13 @@ Pour mesurer une tension on utilise un voltmètre branché en _dérivation_ avec
     import cetz.draw: line
     import "@local/circuitypst:0.0.1": node, to
 
-    to("voltmeter", (-2,0), (2,0), label: "")
+    line((-2,0), (2,0))
+    line((-1,0), (-1,1))
+    line((1,0), (1,1))
+
+    to("voltmeter", (-1,1), (1,1), label: "")
   }),
-  caption: [Voltmètre en série]
+  caption: [Voltmètre en dérivation]
 )
 
 == Addivité des tensions et loi des mailles
