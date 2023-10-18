@@ -126,15 +126,15 @@ Dans le schéma suivant, on a $1/C_(\eq) = 1/C_1 + 1/C_2$ :
 
     to("idealTension", (-2, -1), (-2, 1), name: "idealTension", i: $i$)
 
-    to("capacitor", (-2,1), (2,1), label: $C_1$, i: $i$, v: $U_R$)
-    to("R", (2,1), (2,-1), label: $C_2$, i: $i$, v: $U_C$, name: "R2")
+    to("capacitor", (-2,1), (2,1), label: $C$, i: $i$, v: $U_C$)
+    to("R", (2,1), (2,-1), label: $R$, i: $i$, v: $U_R$, name: "R2")
 
     line((2,-1), (-2,-1), name: "tension")
   }),
   caption: [Circuit RC (Résistance/Condensateur)]
 )
 
-On a la loi des mailles $E = U_R + U_C$, la loi d'Ohm $U_R = R i$ et la caractéristique $U/i$ du condensateur $i = c (d U_c)/(d t)$.
+On a la loi des mailles $E = U_R + U_C$, la loi d'Ohm $U_R = R i$ et la caractéristique $U I$ du condensateur $i = c (d U_c)/(d t)$.
 
 Ainsi on a $E = R i + U_C = R C (d U_c)/(d t) + U_C$ avec $tau = R C$ le temps caractéristique.
 
