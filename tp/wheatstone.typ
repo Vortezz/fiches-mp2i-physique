@@ -63,7 +63,7 @@ Le montage du pont de Wheatstone est le suivant :
 
 = Équilibre du pont de Wheatstone
 
-Pour que le pont de Wheatstone soit équilibré, il faut que la  soit nul. On a donc la condition suivante sur les résistances :
+Pour que le pont de Wheatstone soit équilibré, il faut que la tension aux bornes du voltmètre soit nulle. On a alors :
 
 $ frac(R_v,X) = frac(R_1,R_2) $
 
